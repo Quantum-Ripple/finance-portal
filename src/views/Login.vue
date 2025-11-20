@@ -58,7 +58,7 @@ const error = ref('')
 const loading = ref(false)
 
 
-const ALLOWED_ROLES = ['parent', 'admin']
+const ALLOWED_ROLES = ['finance', 'admin']
 
 const handleLogin = async () => {
   error.value = ''
@@ -91,7 +91,7 @@ const handleLogin = async () => {
       
       localStorage.removeItem('token')
       localStorage.removeItem('user')
-      error.value = 'Your account does not have access to the Parents portal.'
+      error.value = 'Your account does not have access to the Finance portal.'
       loading.value = false
       return
     }
@@ -118,7 +118,7 @@ const handleLogin = async () => {
 <template>
   <div class="min-h-screen flex flex-col justify-center items-center bg-gray-100">
     <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-sm">
-      <h2 class="text-xl font-semibold text-center mb-4">Parent Login</h2>
+      <h2 class="text-xl font-semibold text-center mb-4">Finance Login</h2>
 
       <input v-model="email" type="email" placeholder="Email"
              class="border rounded w-full p-2 mb-3" />

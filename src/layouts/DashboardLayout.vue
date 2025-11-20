@@ -51,19 +51,7 @@ import { useRouter } from 'vue-router'
 
 const navItems = [
   { label: 'Dashboard', route: { name: 'Dashboard' } },
-  { label: 'Student Information', route: { name: 'StudentsPage' } },
-  { label: 'Attendance Records', route: { name: 'AttendancePage' } },
-  { label: 'Finance' ,
-     children: [
-      { label: 'Fee Overview', route: { name: 'FeeSummary' } },
-      { label: 'Fee Statement', route: { name: 'FeeStatements' } },
-      { label: 'Fee Structure', route: { name: 'FeeStructure' } },
-      { label: 'Make Payment', route: { name: 'OnlinePayment' } },
-    ], 
-  },
-  { label: 'Grades', route: { name: 'GradesPage' } },
   { label: 'Announcements', route: { name: 'AnnouncementsPage' } },
-  { label: 'Assignments', route: { name: 'AssignmentsPage' } },
   { label: 'Settings', route: { name: 'Settings' } },
 ]
 

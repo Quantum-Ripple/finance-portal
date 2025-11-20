@@ -59,8 +59,8 @@
         
         <nav class="hidden md:flex items-center space-x-3">
           
-          <router-link :to="{ name: 'StudentsPage'}"class="px-3 py-2 rounded-md hover:bg-gray-100">Students</router-link>
-          <router-link :to="{ name: 'AnnouncementsPage'}"class="px-3 py-2 rounded-md hover:bg-gray-100">Announcements</router-link>
+          <router-link to="" class="px-3 py-2 rounded-md hover:bg-gray-100">Students</router-link>
+          <router-link to="" class="px-3 py-2 rounded-md hover:bg-gray-100">Announcements</router-link>
 
            
 

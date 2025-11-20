@@ -3,18 +3,11 @@ import Auth from '../api/Auth'
 import LoginPage from '../views/Login.vue'
 import DashboardLayout from '../layouts/DashboardLayout.vue'
 import Dashboard from '../views/Dashboard.vue'
-import StudentsPage from '../views/Students.vue'
-import AssignmentsPage from '../views/Assignments.vue'
-import AttendancePage from '../views/Attendance.vue'
 import Settings from '../views/Settings.vue'
-import GradesPage from '../views/Grades.vue'
 import AnnouncementsPage from '../views/Announcements.vue'
-import Finance from '../views/Finance.vue'
 
-import FeeStatements from '../components/Finance/FeeStatements.vue'
-import FeeStructure from '../components/Finance/FeeStructure.vue'
-import FeeSummary from '../components/Finance/FeeSummary.vue'
-import OnlinePayment from '../components/Finance/OnlinePayment.vue'
+
+
 
 
 
@@ -39,62 +32,13 @@ const routes = [
         name: 'Dashboard',
         component: Dashboard,
       },
-      {
-        path: 'students',
-        name: 'StudentsPage',
-        component: StudentsPage,
-      },
-      {
-        path: 'finance',
-        name: 'Finance',
-        redirect: { name: 'FeeSummary' }, // default subpage
-        children: [
-          {
-            path: 'overview',
-            name: 'FeeSummary',
-            component: FeeSummary,
-          },
-          {
-            path: 'fee-structure',
-            name: 'FeeStructure',
-            component: FeeStructure,
-          },
-          {
-            path: 'fee-statement',
-            name: 'FeeStatements',
-            component: FeeStatements,
-          },
-          {
-            path: 'online-payment',
-            name: 'OnlinePayment',
-            component: OnlinePayment,
-          },
-        ],
-      },
-      
-      {
-        path: 'attendance',
-        name: 'AttendancePage',
-        component: AttendancePage,
-      },
-     
-      
-      {
-        path: 'grades',
-        name: 'GradesPage',
-        component: GradesPage,
-      },
       
       {
         path: 'announcements',
         name: 'AnnouncementsPage',
         component: AnnouncementsPage,
       },
-      {
-        path: 'assignments',
-        name: 'AssignmentsPage',
-        component: AssignmentsPage,
-      },
+    
     
       {
         path: 'settings',
