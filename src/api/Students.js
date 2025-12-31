@@ -1,8 +1,8 @@
-import api from './Axios'
+import api from './axios'
 
 export const getStudent = async() => {
   try {
-    const response = await api.get("/parent/student/");
+    const response = await api.get("/student/");
     return response.data;
   } catch (error) {
     console.error("Error fetching student:", error);

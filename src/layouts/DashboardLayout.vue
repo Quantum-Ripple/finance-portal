@@ -51,8 +51,13 @@ import { useRouter } from 'vue-router'
 
 const navItems = [
   { label: 'Dashboard', route: { name: 'Dashboard' } },
+  { label: 'Fee Structures', route: { name: 'FeeStructure'}},
+  { label: 'Payments', route: { name: 'Payments'}},
+  { label: 'Invoices', route: { name: 'Invoices'}},
+  { label: 'Expenditures', route: { name: 'Expenditures'}},
   { label: 'Announcements', route: { name: 'AnnouncementsPage' } },
   { label: 'Settings', route: { name: 'Settings' } },
+ 
 ]
 
 const mobileSidebarOpen = ref(false)
@@ -69,7 +74,7 @@ function getGreeting() {
 }
 const userData = JSON.parse(localStorage.getItem("user") || "{}")
 
-const PageTitle = ref(`${getGreeting()}, ${userData.full_name || ""}`)
+const PageTitle = ref(`${getGreeting()}, ${userData.first_name || ""}`)
 
 const sidebarTitle = ref(`${userData.school_name || ""}`)
 

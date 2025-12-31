@@ -58,7 +58,7 @@ const error = ref('')
 const loading = ref(false)
 
 
-const ALLOWED_ROLES = ['finance', 'admin']
+const ALLOWED_ROLES = ['finance','admin']
 
 const handleLogin = async () => {
   error.value = ''

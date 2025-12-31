@@ -59,8 +59,8 @@
         
         <nav class="hidden md:flex items-center space-x-3">
           
-          <router-link to="" class="px-3 py-2 rounded-md hover:bg-gray-100">Students</router-link>
-          <router-link to="" class="px-3 py-2 rounded-md hover:bg-gray-100">Announcements</router-link>
+          <router-link to="payments" class="px-3 py-2 rounded-md hover:bg-gray-100">Payments</router-link>
+          <router-link to="announcements" class="px-3 py-2 rounded-md hover:bg-gray-100">Announcements</router-link>
 
            
 
