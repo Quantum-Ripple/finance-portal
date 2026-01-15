@@ -3,7 +3,7 @@ import api from './axios'
 export default {
   async login(username, password) {
     
-    const response = await api.post('token/', { username, password })
+    const response = await api.post('/token/', { username, password })
     const { access, refresh } = response.data
 
     
