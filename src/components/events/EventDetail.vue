@@ -66,7 +66,7 @@ async function fetchEvent() {
     loading.value = false;
   }
 }
-
+/*
 async function handleDelete() {
   if (!confirm("Are you sure you want to delete this announcement?")) return;
 
@@ -89,7 +89,7 @@ async function handleDelete() {
     deleting.value = false;
   }
 }
-
+*/
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleString("en-GB", {
