@@ -2,9 +2,7 @@ import api from './axios'
 
 
 
-/* ================================
-   FEES (Fee Structures)
-================================ */
+
 export const getFees = async () => {
   const response = await api.get('/fee-structures/')
   return response.data
@@ -30,21 +28,10 @@ export const deleteFee = async (id) => {
   return response.data
 }
 
-/* ================================
-   INVOICES
-================================ */
-
 
 
 export const createBulkInvoices = async (payload) => {
-  /**
-   * payload example:
-   * {
-   *   class_level: "Grade 4",
-   *   term: "Term 1",
-   *   fee_structure: 3
-   * }
-   */
+  
   const response = await api.post('/invoices/bulk-create/', payload)
   return response.data
 }
@@ -55,31 +42,20 @@ export const getInvoices = async () => {
   return response.data
 }
 
-// Get a single invoice with payments
+
 export const getInvoiceById = async (id) => {
   const response = await api.get(`/invoices/${id}/`)
   return response.data
 }
 
-// Create invoices (bulk or single, depending on backend)
+
 export const createInvoice = async (payload) => {
-  /**
-   * payload example:
-   * {
-   *   student: 1,
-   *   fee_structure: 3,
-   *   amount_due: 15000
-   * }
-   */
+ 
   const response = await api.post('/invoices/', payload)
   return response.data
 }
 
-/* ================================
-   PAYMENTS
-================================ */
 
-// List all payments (for reports)
 export const getPayments = async () => {
   const response = await api.get('/payments/')
   return response.data
